@@ -1,0 +1,242 @@
+马优晨（weimob H5）  17:28:59
+@charset "utf-8";
+
+* {margin:0;
+	padding:0;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+    /*height:100%;*/
+    min-height: 100%;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+    width: 100%;
+    /*height:100%;*/
+    min-height: 100%;
+    font-family: tahoma,arial,'Hiragino Sans GB',"\5b8b\4f53",sans-serif;
+    font-size: 12px;
+    position: relative;
+    word-break:break-all;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);
+    -webkit-box-sizing:border-box;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  font-size: 0;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+img:not([src*="/"]) {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*th, td, caption {
+    vertical-align: middle;
+}*/
+
+textarea {
+    resize: none;
+}
+
+input, button, select, textarea {
+    -webkit-appearance:none;
+    outline: none;
+    border-radius: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+/*input:valid{visibility: visible;}*/
+/*input::-webkit-input-placeholder {
+    display: block;
+    width:100%;
+    height:100%;
+    color:#00f;
+    background:url(../imgs/w_7.png) no-repeat center  -120px;
+    -webkit-backgrond-size:30px auto;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing:3px;
+}*/
+
+ul,ol,li {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+.section-body .text  {
+    margin-top: 24px;
+    margin-left: 40px;
+    margin-right: 35px;
+    width: 84%;
+    font-family: "宋体";
+    font-size: 18px;
+}
+.section-body .textImg{
+    margin-top: 45px;
+    color: blue;
+    text-align: center;
+    vertical-align: middle;
+	margin: 0 auto;
+	padding: 0;
+}
+.left{
+	float: left;
+	background: red;
+	width: 20%;
+	height: 600px;
+}
+.center{
+	float: left;
+	background: rgb(240,240,240
+	);
+	width: 80%;
+	height: 600px;
+}
+
+.header{
+	height: 50px;
+}
+.footer{
+	margin: 0 auto;
+	width: 70%;
+	height: 50px;
+	background: green;
+}
+.logo{
+	float: left;
+	width: 20%;
+	height: inherit;
+	background: white;
+}
+
+.logo:first-child:first-letter{
+	font-size: large;
+}
+.navigation{
+	float: right;
+	width: 80%;
+	height: inherit;
+	background: rgb(87,156,231);
+}
+.navigation ul{
+	top: 0;
+	margin: 0;
+	list-style: none;
+	height: inherit;
+	white-space: nowrap;
+	width: 300px;
+}
+.navigation li{
+	float: left;
+	height: inherit;
+	line-height: 100%;
+	width: 100px;
+	padding: 0;
+	text-align: center;
+	font: "微软雅黑" 2em;
+	font-size: 18px;
+	color: white;
+	line-height: 50px;
+	
+}
+.navigation li:hover{
+	background: gray;
+}
+.navigation li:active{
+	background: yellow;
+}
+.tools{
+	height: 50px;
+	background: rgb(255,255,229);
+	line-height: 50px;	
+	padding-left: 10px;
+	position: relative;
+}
+.tools button{
+	width: 50px;
+	height: 50%;
+	line-height: 10px;
+	border: hidden;
+	border-bottom-right-radius: 5px ;
+	background: rgb(254,159,21);
+}
+.tools button:active{
+	background: blueviolet;;
+}
+.img-container{
+	white-space: nowrap;
+	overflow: auto;
+	height: 550px;
+	padding: 20px;
+}
+.item{
+	float: left;
+	margin: 0 0 20px 20px;
+	width: 150px;
+	height: 150px;
+	background: white;
+}
+.item  img{
+	width: auto;  
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%;    
+}
+.base-img{
+	height: 120px;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	width: inherit;
+}
+.img-name{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.img-name:hover{
+	background: rgb(218,218,218);
+}
+
+.btn-grouop{
+	position: absolute;
+	right: 0;
+}
+
+.btn-search{
+	display: inline-block;
+	top: 25%;
+	border: 1px solid #555;
+	border-radius: 5px;
+	height: 50%;
+}

@@ -1,144 +1,187 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link href="css/main.css" rel="stylesheet"/>
-	</head>
-	<body>
-		<section>
-			<header class="header">
-				<div class="logo">
-					<p>Weimob</p>
-				</div>
-				<nav class="navigation">
-					<ul>
-						<li>
-							百宝箱
-						</li>
-						<li>
-							盒子
-						</li>
-						<li>
-							单机游戏
-						</li>
-					</ul>
-				</nav>
-			</header>
-		</section>
-		<div	 class="container clearfix">
-			<div class="left">
-				
-			</div>
-			<div class="center">
-				<div class="tools">
-					<div class="btn-grouop">
-						<button>上传</button>
-						<a href="#">下载</a>
-						<input class="btn-search" type="text" />
-					</div>
-				</div>
-				<div class="img-container">
-					
-					<div class="item">
-						<div class="base-img">
-						<img src="http://img3.imgtn.bdimg.com/it/u=2795480632,3359885103&fm=11&gp=0.jpg" alt="" />
-						</div>
-						<div class="img-name">
-								<span id="name">{{name}}</span>
-						</div>
-					</div>
-					<div class="item">
-						<div class="base-img">
-						<img src="http://img1.imgtn.bdimg.com/it/u=4000088051,3582850452&fm=27&gp=0.jpg" alt="" />
-						</div>
-						<div class="img-name">
-							<span>圣女贞德</span>
-						</div>
-					</div>
-					<div class="item">
-						<div id="v-bind">
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<section>
+    <header class="header">
+        <div class="logo">
+            <p>Weimob</p>
+        </div>
+        <nav class="navigation">
+            <ul >
+                <li>
+                    百宝箱
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">盒子</a>
+                    <ul class="ul-dropdown">
+                        <li>
+                            <span>战绩查询</span>
+                        </li>
+                        <li>
+                            <span>历史对战</span>
+                        </li>
+                        <li>
+                            <span>排位消息</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    单机游戏
+                </li>
+            </ul>
+        </nav>
+    </header>
+</section>
+<div class="container clearfix">
+    <div class="left">
+
+    </div>
+    <div class="center">
+        <div class="tools">
+            <div class="controller">
+                <div class="btn-group">
+                    <button>
+                        <span class="upload-icon"></span>上传图片
+                    </button>
+                </div>
+                <div class="div-search">
+                    <input placeholder="按文件夹名称/图片名称搜索" type="text"/>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="screening">
+
+        </div>
+        <div class="img-container">
+
+            <div class="item">
+                <div class="base-img">
+                    <img style="box-shadow: 3px 3px 6px gray" src="http://img3.imgtn.bdimg.com/it/u=2795480632,3359885103&fm=11&gp=0.jpg" alt=""/>
+                </div>
+                <div class="img-name">
+                    <span id="name">{{name}}</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="base-img">
+                    <img src="http://img1.imgtn.bdimg.com/it/u=4000088051,3582850452&fm=27&gp=0.jpg" alt=""/>
+                </div>
+                <div class="img-name">
+                    <span>圣女贞德</span>
+                </div>
+            </div>
+            <div class="item">
+                <div id="v-bind">
 							 <span v-bind:title="message">
 							    鼠标悬停几秒钟查看此处动态绑定的提示信息！
 							  </span>
-						</div>
-					</div>
-					<div class="item">
-						<div id="app-3">
-						  <p v-if="seen">现在你看到我了</p>
-						</div>
-					</div>
-					<div class="item">
-						<div id="app-4">
-						  <ol>
-						    <li v-for="todo in todos">
-						      {{ todo.text }}
-						    </li>
-						  </ol>
-						</div>
-					</div>
-					<div class="item">
-						<div id="app-5">
-						  <p>{{ message }}</p>
-						  <button v-on:click="reverseMessage">逆转消息</button>
-						</div>
-					</div>
-					<div class="item">
-						<div id="app-6">
-						  <p>{{ message }}</p>
-						  <input v-model="message">
-						</div>
-					</div>
-					<div class="item">
-						<div id="app-7">
-							<ol>
-								<todo-item v-for="item in groceryList"
-									 v-bind:todo="item"
-									  v-bind:key="item.id">
-								</todo-item>
-							</ol>
-						</div>
-					</div>
-					<div class="item">
-						<div id="app">
-							<app-nav></app-nav>
-							<app-view>
-								<app-sidebar></app-sidebar>
-								<app-content></app-content>
-							</app-view>
-						</div>
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-					<div class="item">
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-		</div>
-		
-		<script src="https://unpkg.com/vue"></script>
-		<script src="js/proto.js"></script>
-	</body>
+                </div>
+            </div>
+            <div class="item">
+                <div id="app-3">
+                    <p v-if="seen">现在你看到我了</p>
+                </div>
+            </div>
+            <div class="item">
+                <div id="app-4">
+                    <ol>
+                        <li v-for="todo in todos">
+                            {{ todo.text }}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="item">
+                <div id="app-5">
+                    <p>{{ message }}</p>
+                    <button v-on:click="reverseMessage">逆转消息</button>
+                </div>
+            </div>
+            <div class="item">
+                <div id="app-6">
+                    <p>{{ message }}</p>
+                    <input v-model="message">
+                </div>
+            </div>
+            <div class="item">
+                <div id="app-7">
+                    <ol>
+                        <todo-item v-for="item in groceryList"
+                                   v-bind:todo="item"
+                                   v-bind:key="item.id">
+                        </todo-item>
+                    </ol>
+                </div>
+            </div>
+            <div class="item">
+                <div id="app">
+                    <app-nav></app-nav>
+                    <app-view>
+                        <app-sidebar></app-sidebar>
+                        <app-content></app-content>
+                    </app-view>
+                </div>
+            </div>
+            <div class="item" style="background: url(//img.alicdn.com/tps/i3/T10moYFwlcXXbtZ_ga-204-618.png) no-repeat -20px -130px;">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+            <div class="item">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
+<div class="alert">
+    sdasdadas<br>
+    asdsadasddasdw<br>
+    adoqwe98ique982iojads<br>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="js/proto.js"></script>
+</body>
 </html>
